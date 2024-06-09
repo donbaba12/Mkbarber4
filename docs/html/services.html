@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Mk Barber</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mk Barber</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    
+    <div class="container">
+        
+        <h1 class="my-4">Select Your Haircut</h1>
+        <div class="haircut-container">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Cut</h5>
+                    <p class="card-text">A traditional haircut with short back and sides.</p>
+                    <p class="card-text"><strong>Price:</strong> $20</p>
+                    <button class="btn btn-primary haircut-button" data-name="Classic Cut" data-price="$20" data-description="A traditional haircut with short back and sides."id="button3">Select</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fade Cut</h5>
+                    <p class="card-text">A modern style with a gradual fade from short to longer hair.</p>
+                    <p class="card-text"><strong>Price:</strong> $25</p>
+                    <button class="btn btn-primary haircut-button" data-name="Fade Cut" data-price="$25" data-description="A modern style with a gradual fade from short to longer hair." id="button3">Select</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Beard Trim</h5>
+                    <p class="card-text">A precise trim for a well-groomed beard.</p>
+                    <p class="card-text"><strong>Price:</strong> $15</p>
+                    <button class="btn btn-primary haircut-button" data-name="Beard Trim" data-price="$15" data-description="A precise trim for a well-groomed beard."id="button3">Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="my-4">Select Your Barber</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-group" id="barber-list">
+                <li class="list-group-item barber-item" data-name="John Doe" data-experience="5 years" data-specialty="Fade Cuts">John Doe</li>
+                <li class="list-group-item barber-item" data-name="Jane Smith" data-experience="8 years" data-specialty="Beard Trims">Jane Smith</li>
+                <li class="list-group-item barber-item" data-name="Mike Johnson" data-experience="3 years" data-specialty="Classic Cuts">Mike Johnson</li>
+            </ul>
+        </div>
+       
+    </div>
+    <div class="col-md-8">
+        <div class="overview">
+            <h2 id="ovo">Overview</h2>
+            <p id="barber-overview"> </p>
+            <p id="haircut-overview"> </p>
+            
+        </div>
+
+    </div>
+<button id="book2">Continue</button>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Barber selection
+            $('.barber-item').on('click', function(){
+                var name = $(this).data('name');
+                var experience = $(this).data('experience');
+                var specialty = $(this).data('specialty');
+
+                $('#barber-overview').html(`
+                    <strong>Barber:</strong> ${name}<br>
+                    
+                `);
+
+                $('.barber-item').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Haircut selection
+            $('.haircut-button').on('click', function(){
+                var name = $(this).data('name');
+                var price = $(this).data('price');
+                var description = $(this).data('description');
+
+                $('#haircut-overview').html(`
+                    <strong>Cut:</strong> ${name}<br>
+                    <strong>Price:</strong> ${price}<br>
+                   
+                `);
+
+                $('.haircut-button').removeClass('active');
+                $(this).addClass('active');
+            });
+            var book2Button = document.getElementById("book2");
+            
+        });
+    </script>
+
+    
+    </div>
+        </div>
+    </div>
+    
+    
+    <footer class="text-center">
+        <p>&copy; 2024 Mk Barber </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+/* custom.css */
+
+/* Change navbar background color */
+index.body{
+    background-color: rgb(0, 0, 0)
+}
+.navbar {
+    background-color: rgb(0, 0, 0) !important; /* Use !important to override Bootstrap's styles */
+}
+
+/* Change navbar text color */
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Change active link color */
+.navbar-nav .nav-item.active .nav-link {
+    color: rgb(255, 255, 255) !important;
+}
+.navbar-brand{
+    color: rgb(255, 255, 255) !important;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 400px;
+  font-size: 30px;
+}
+.navbar-nav .nav-item {
+    margin-right: 150px;
+}
+#homeCon{
+   display: flex;
+    height: 100vh;
+    margin-right: 0px;
+}
+#homeCon h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: rgb(255, 255, 255) !important;
+   
+    margin-top: 260px;
+    font-size: 100Px;
+    
+    
+}
+#homeCon h2{
+    
+    position: absolute;
+    margin-top: 100px;
+    
+    top: 45%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 150Px;
+    font-family:"Pacifico", cursive;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  
+}
+#homeCon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#homeCon button{
+    background-color: rgb(124, 124, 124);
+    margin-left: 0%;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-top: 100px;
+    border-color: black;
+    top: 60%;
+    left: 10%;
+
+}
+#homeCon button:hover{
+    background-color: white;
+    color: black;
+}
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.form-check-label {
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+#add{
+    border-radius: 10px;
+    width: 50px;
+    background-color: rgb(105, 93, 93);
+    color: white;
+  
+}
+.card-body{
+background-color: rgb(146, 144, 144);
+}
+ h1{
+     text-align: center;
+ }
+ #ovo{
+    
+    margin-left: 650px;
+}
+ #barber-list{
+     
+     width: 500px;
+     margin-left: 500px;
+ }
+ .row{
+
+ }
+ #barber-overview{
+    margin-left: 650px;
+}
+#haircut-overview{
+    margin-left: 650px;
+}
+
+#book2{
+    margin-left: 690px;  
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    height: 35px;
+    border-color: white;
+}
+
+#loc{
+    font-size:  70px;
+    font-family: "Pacifico", cursive;
+}
+#open{
+    font-size:  70px;
+    font-family: "Pacifico", cursive;
+}
+#con{
+    font-size:  70px;
+    font-family: "Pacifico", cursive;
+}
+#confirm{
+    
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+}
